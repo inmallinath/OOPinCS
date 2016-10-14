@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP.BL
 {
-    public class Class1
+    public class Customer
     {
     }
 }
