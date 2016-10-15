@@ -69,12 +69,27 @@ namespace OOP.BL
         /// </summary>
         public string FullName
         {
+            //get
+            //{
+            //    var fullName = LastName + ", ";
+
+            //    if (!String.IsNullOrWhiteSpace(FirstName))
+            //    {
+            //        fullName += FirstName;
+            //    }
+            //    return fullName;
+            //}
+
             get
             {
-                var fullName = LastName + ", ";
+                var fullName = LastName;
 
                 if (!String.IsNullOrWhiteSpace(FirstName))
                 {
+                    if (!String.IsNullOrWhiteSpace(fullName))
+                    {
+                        fullName += ", ";
+                    }
                     fullName += FirstName;
                 }
                 return fullName;

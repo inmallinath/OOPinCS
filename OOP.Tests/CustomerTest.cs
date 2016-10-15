@@ -68,7 +68,7 @@ namespace OOP.Tests
             //Arrange
             var customer = new Customer();
             customer.LastName = "test";
-            var expected = "test, ";
+            var expected = "test";
             //Act
             var actual = customer.FullName;
 
@@ -85,7 +85,7 @@ namespace OOP.Tests
             //Arrange
             var customer = new Customer();
             customer.FirstName = "csharp";
-            var expected = ", csharp";
+            var expected = "csharp";
             //Act
             var actual = customer.FullName;
 
@@ -101,12 +101,12 @@ namespace OOP.Tests
         {
             //Arrange
             var customer = new Customer();
-            var expected = ", ";
+            //var expected = ;
             //Act
             var actual = customer.FullName;
 
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsNull(actual);
         }
 
         /// <summary>
