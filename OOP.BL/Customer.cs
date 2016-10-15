@@ -34,14 +34,11 @@ namespace OOP.BL
         {
             get
             {
-                var fullName = LastName;
+                var fullName = LastName + ", ";
 
-                if (!String.IsNullOrWhiteSpace(LastName))
+                if (!String.IsNullOrWhiteSpace(FirstName))
                 {
-                    if (!String.IsNullOrWhiteSpace(FirstName))
-                    {
-                        fullName += ", " + FirstName;
-                    }
+                    fullName += FirstName;
                 }
                 return fullName;
             }
