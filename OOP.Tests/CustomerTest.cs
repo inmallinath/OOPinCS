@@ -90,5 +90,21 @@ namespace OOP.Tests
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestStaticProperty()
+        {
+            //Arrange
+            var customer1 = new Customer();
+            Customer.InstanceCount += 1;
+            var customer2 = new Customer();
+            Customer.InstanceCount += 1;
+            var expected = Customer.InstanceCount;
+            //Act
+            var actual = 2;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

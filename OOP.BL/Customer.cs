@@ -8,6 +8,15 @@ namespace OOP.BL
 {
     public class Customer
     {
+        public Customer()
+        {
+
+        }
+
+        public Customer(int customerId)
+        {
+
+        }
         private string _lastName;
 
         public string LastName
@@ -28,7 +37,7 @@ namespace OOP.BL
 
         public int CustomerId { get; private set; }
 
-        public static int InstanceCount { get; }
+        public static int InstanceCount { get; set; }
 
         public string FullName
         {
@@ -53,6 +62,18 @@ namespace OOP.BL
                 isValid = false;
             }
             return isValid;
+        }
+
+        public Customer retrieve(int customerId)
+        {
+            var customer = new Customer(customerId);
+            return customer;
+        }
+
+        public List<Customer> retrieve()
+        {
+            var customers = new List<Customer>();
+            return customers;
         }
     }
 }
