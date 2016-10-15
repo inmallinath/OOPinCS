@@ -69,17 +69,6 @@ namespace OOP.BL
         /// </summary>
         public string FullName
         {
-            //get
-            //{
-            //    var fullName = LastName + ", ";
-
-            //    if (!String.IsNullOrWhiteSpace(FirstName))
-            //    {
-            //        fullName += FirstName;
-            //    }
-            //    return fullName;
-            //}
-
             get
             {
                 var fullName = LastName;
@@ -113,24 +102,31 @@ namespace OOP.BL
         }
 
         /// <summary>
+        /// Saves the customer to DB
+        /// </summary>
+        /// <returns></returns>
+        public bool Save()
+        {
+            return true;
+        }
+
+        /// <summary>
         /// Code to retrieve one single customer from DB
         /// </summary>
         /// <param name="customerId"></param>
         /// <returns></returns>
-        public Customer retrieve(int customerId)
+        public Customer Retrieve(int customerId)
         {
-            var customer = new Customer(customerId);
-            return customer;
+            return new Customer();
         }
 
         /// <summary>
         /// Code to retrieve a list of customers
         /// </summary>
         /// <returns></returns>
-        public List<Customer> retrieve()
+        public List<Customer> Retrieve()
         {
-            var customers = new List<Customer>();
-            return customers;
+            return new List<Customer>();
         }
     }
 }
