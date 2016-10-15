@@ -38,7 +38,7 @@ namespace OOP.BL
 
                 if (!String.IsNullOrWhiteSpace(LastName))
                 {
-                    if (!String.IsNullOrWhiteSpace(FirstName)
+                    if (!String.IsNullOrWhiteSpace(FirstName))
                     {
                         fullName += FirstName;
                     }
