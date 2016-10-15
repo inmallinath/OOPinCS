@@ -7,6 +7,9 @@ namespace OOP.Tests
     [TestClass]
     public class CustomerTest
     {
+        /// <summary>
+        /// Test for Blank LastName of the Validate Method
+        /// </summary>
         [TestMethod]
         public void ValidateBlankLastName()
         {
@@ -21,6 +24,9 @@ namespace OOP.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test for Blank EmailAddress of the Validate Method
+        /// </summary>
         [TestMethod]
         public void ValidateBlankEmailAddress()
         {
@@ -35,8 +41,11 @@ namespace OOP.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test for Full Name property with valid values
+        /// </summary>
         [TestMethod]
-        public void FullNameProperty()
+        public void FullNamePropertyValid()
         {
             //Arrange
             var customer = new Customer();
@@ -50,6 +59,9 @@ namespace OOP.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test for Full Name Property with no first name
+        /// </summary>
         [TestMethod]
         public void FullNamePropertyNoFirstName()
         {
@@ -64,6 +76,9 @@ namespace OOP.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test for Full Name Property with no last name
+        /// </summary>
         [TestMethod]
         public void FullNamePropertyNoLastName()
         {
@@ -78,6 +93,9 @@ namespace OOP.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test for Full Name Property with no first or last name
+        /// </summary>
         [TestMethod]
         public void FullNamePropertyNoFirstOrLastName()
         {
@@ -91,6 +109,9 @@ namespace OOP.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test for static property
+        /// </summary>
         [TestMethod]
         public void TestStaticProperty()
         {
