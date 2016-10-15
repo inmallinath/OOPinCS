@@ -40,11 +40,22 @@ namespace OOP.BL
                 {
                     if (!String.IsNullOrWhiteSpace(FirstName))
                     {
-                        fullName += FirstName;
+                        fullName += ", " + FirstName;
                     }
                 }
                 return fullName;
             }
+        }
+
+        public bool validate()
+        {
+            var isValid = true;
+
+            if (String.IsNullOrWhiteSpace(LastName) || String.IsNullOrWhiteSpace(EmailAddress))
+            {
+                isValid = false;
+            }
+            return isValid;
         }
     }
 }

@@ -53,6 +53,12 @@
     <Compile Include="CustomerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OOP.BL\OOP.BL.csproj">
+      <Project>{1be1a698-c73f-4bea-858f-27d09f680aac}</Project>
+      <Name>OOP.BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
