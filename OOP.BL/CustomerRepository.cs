@@ -8,6 +8,13 @@ namespace OOP.BL
 {
     public class CustomerRepository
     {
+        private AddressRepository addressRepository { get; set; }
+
+        public CustomerRepository()
+        {
+            addressRepository = new AddressRepository();
+        }
+        
         /// <summary>
         /// Saves the customer to DB
         /// </summary>
@@ -25,6 +32,8 @@ namespace OOP.BL
         public Customer Retrieve(int customerId)
         {
             var customer = new Customer(customerId);
+            customer.AddressList = addressRepository.RetrieveByCustomerId(customerId).ToList();
+
             if (customerId == 1)
             {
                 customer.FirstName = "CSharp";
