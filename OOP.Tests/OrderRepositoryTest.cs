@@ -12,13 +12,13 @@ namespace OOP.Tests
         {
             //Arrange
             var orderData = new OrderRepository();
-            var expected = new Order(1)
+            var expected = new Order(5)
             {
                 OrderDate = new DateTimeOffset(2016, 10, 15, 08, 30, 00, new TimeSpan(-6, 0, 0))
             };
 
             //Act
-            var actual = orderData.Retrieve(1);
+            var actual = orderData.Retrieve(5);
 
             //Assert
             Assert.AreEqual(expected.OrderId, actual.OrderId);
