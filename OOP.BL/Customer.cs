@@ -64,6 +64,8 @@ namespace OOP.BL
         /// </summary>
         public static int InstanceCount { get; set; }
 
+        public int CustomerType { get; set; }
+
         /// <summary>
         /// Full Name property concatenates LastName and Firstname
         /// "test, csharp"
