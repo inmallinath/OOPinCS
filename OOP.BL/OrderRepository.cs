@@ -12,7 +12,7 @@ namespace OOP.BL
         /// Save the order to the DB
         /// </summary>
         /// <returns></returns>
-        public bool Save()
+        public bool Save(Order order)
         {
             return true;
         }

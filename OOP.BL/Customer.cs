@@ -11,7 +11,7 @@ namespace OOP.BL
         /// <summary>
         /// Default Constructor
         /// </summary>
-        public Customer()
+        public Customer() : this(0)
         {
 
         }
@@ -25,6 +25,7 @@ namespace OOP.BL
         public Customer(int customerId)
         {
             this.CustomerId = customerId;
+            AddressList = new List<Address>();
         }
         /// <summary>
         /// Backing field for the LastName Property
@@ -84,6 +85,8 @@ namespace OOP.BL
                 return fullName;
             }
         }
+
+        public List<Address> AddressList { get; set; } //Does not provida good default value(NULL); hence initialize it in the constructor
 
         /// <summary>
         /// Validate if the user has put in a last name or email address

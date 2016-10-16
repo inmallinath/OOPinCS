@@ -41,7 +41,7 @@ namespace OOP.BL
             return new OrderItem();
         }
 
-        public bool Save()
+        public bool Save(OrderItem orderItem)
         {
             return true;
         }

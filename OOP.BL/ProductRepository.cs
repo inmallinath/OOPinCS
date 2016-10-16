@@ -39,7 +39,7 @@ namespace OOP.Tests
         /// Save a new Product to the DB
         /// </summary>
         /// <returns></returns>
-        public bool Save()
+        public bool Save(Product product)
         {
             return true;
         }

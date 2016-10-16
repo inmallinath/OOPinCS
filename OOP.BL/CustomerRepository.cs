@@ -12,7 +12,7 @@ namespace OOP.BL
         /// Saves the customer to DB
         /// </summary>
         /// <returns></returns>
-        public bool Save()
+        public bool Save(Customer customer)
         {
             return true;
         }
