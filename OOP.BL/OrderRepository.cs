@@ -14,7 +14,19 @@ namespace OOP.BL
         /// <returns></returns>
         public bool Save(Order order)
         {
-            return true;
+            var success = true;
+            if (order.HasChanges && order.IsValid)
+            {
+                if (order.IsNew)
+                {
+                    //CREATE the new Order
+                }
+                else
+                {
+                    //UPDATE the edited order
+                }
+            }
+            return success;
         }
 
         /// <summary>

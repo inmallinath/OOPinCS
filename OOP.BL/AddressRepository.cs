@@ -58,7 +58,20 @@ namespace OOP.BL
 
         public bool Save(Address address)
         {
-            return true;
+            var success = true;
+
+            if (address.HasChanges && address.IsValid)
+            {
+                if (address.IsNew)
+                {
+                    //CREATE the new Address in DB
+                }
+                else
+                {
+                    //UPDATE the edited address in DB
+                }
+            }
+            return success;
         }
     }
 }

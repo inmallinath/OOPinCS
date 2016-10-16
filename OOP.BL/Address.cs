@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP.BL
 {
-    public class Address
+    public class Address : EntityBase
     {
         /// <summary>
         /// Default Constructor
@@ -37,5 +37,14 @@ namespace OOP.BL
         public string PostalCode { get; set; }
         public string Country { get; set; }
 
+        public override bool Validate()
+        {
+            var isValid = true;
+            if (String.IsNullOrWhiteSpace(StreetLine1) || String.IsNullOrWhiteSpace(City) || String.IsNullOrWhiteSpace(Country) || String.IsNullOrWhiteSpace(State) || String.IsNullOrWhiteSpace(PostalCode))
+            {
+                isValid = false;
+            }
+            return isValid;
+        }
     }
 }

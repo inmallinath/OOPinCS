@@ -21,7 +21,19 @@ namespace OOP.BL
         /// <returns></returns>
         public bool Save(Customer customer)
         {
-            return true;
+            var success = true;
+            if (customer.HasChanges && customer.IsValid)
+            {
+                if (customer.IsNew)
+                {
+                    //CREATE the new Customer record in DB
+                }
+                else
+                {
+                    //UPDATE the edited customer record in DB
+                }
+            }
+            return success;
         }
 
         /// <summary>
