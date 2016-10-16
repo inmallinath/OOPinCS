@@ -38,7 +38,7 @@ namespace OOP.BL
         /// Nullable type of Decimal - Allows a value or Null 
         /// Eg: 0 
         /// </summary>
-        public Decimal? CurrentPrice { get; set; }
+        public decimal? CurrentPrice { get; set; }
 
         /// <summary>
         /// Retrieves a single Product
