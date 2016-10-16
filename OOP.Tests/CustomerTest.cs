@@ -18,7 +18,7 @@ namespace OOP.Tests
             customer.EmailAddress = "test@csharp.com";
             var expected = false;
             //Act
-            var actual = customer.validate();
+            var actual = customer.Validate();
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -35,7 +35,7 @@ namespace OOP.Tests
             customer.LastName = "test";
             var expected = false;
             //Act
-            var actual = customer.validate();
+            var actual = customer.Validate();
 
             //Assert
             Assert.AreEqual(expected, actual);

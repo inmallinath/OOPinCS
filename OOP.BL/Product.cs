@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP.BL
 {
-    public class Product
+    public class Product : EntityBase
     {
         /// <summary>
         /// Default Constructor
@@ -45,7 +45,7 @@ namespace OOP.BL
         /// CurrentPrice cannot be null and Product Name should be present
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 

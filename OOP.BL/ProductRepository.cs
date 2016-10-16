@@ -16,7 +16,7 @@ namespace OOP.Tests
         /// <returns></returns>
         public Product Retrieve(int productId)
         {
-            var product = new Product(productId);
+            Product product = new Product(productId);
             if (productId == 1)
             {
                 product.ProductName = "Terminal SP-630";
@@ -41,7 +41,21 @@ namespace OOP.Tests
         /// <returns></returns>
         public bool Save(Product product)
         {
-            return true;
+            var success = true;
+
+            if (product.HasChanges && product.IsValid)
+            {
+                if (product.IsNew)
+                {
+                    //Save the new Product - CREATE ACTION
+                }
+                else
+                {
+                    //Update the Product - UPDATE ACTION
+                }
+            }
+
+            return success;
         }
 
     }

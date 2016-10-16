@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP.BL
 {
-    public class Order
+    public class Order : EntityBase
     {
         /// <summary>
         /// Default Constructor
@@ -50,7 +50,7 @@ namespace OOP.BL
         /// Validate Method to verify that the Order Date is not Null
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 

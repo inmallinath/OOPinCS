@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP.BL
 {
-    public class Customer
+    public class Customer : EntityBase
     {
         /// <summary>
         /// Default Constructor
@@ -95,7 +95,7 @@ namespace OOP.BL
         /// Will be required fields
         /// </summary>
         /// <returns></returns>
-        public bool validate()
+        public override bool Validate()
         {
             var isValid = true;
 
