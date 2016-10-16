@@ -56,6 +56,15 @@ namespace OOP.BL
         }
 
         /// <summary>
+        /// Retrieve a list of Orders
+        /// </summary>
+        /// <returns></returns>
+        public List<Order> Retrieve()
+        {
+            return new List<Order>();
+        }
+
+        /// <summary>
         /// Validate Method to verify that the Order Date is not Null
         /// </summary>
         /// <returns></returns>
