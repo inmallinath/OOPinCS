@@ -24,7 +24,7 @@ namespace OOP.BL
         /// <param name="customerId"></param>
         public Customer(int customerId)
         {
-            CustomerId = customerId;
+            this.CustomerId = customerId;
         }
         /// <summary>
         /// Backing field for the LastName Property
