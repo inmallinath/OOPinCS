@@ -7,6 +7,9 @@ namespace OOP.Tests
     [TestClass]
     public class ProductTest
     {
+        /// <summary>
+        /// Test to validate if the current price is null
+        /// </summary>
         [TestMethod]
         public void TestValidateCurrentPriceWithNull()
         {
@@ -22,8 +25,11 @@ namespace OOP.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test to Validate the presence of a Product Name
+        /// </summary>
         [TestMethod]
-        public void TestValidateCurrentPriceWithNoProductName()
+        public void TestValidateNoProductName()
         {
             //Arrange
             var product = new Product();
