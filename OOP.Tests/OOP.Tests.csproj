@@ -58,6 +58,7 @@
     <Compile Include="OrderTest.cs" />
     <Compile Include="OrderItemTest.cs" />
     <Compile Include="CustomerRepositoryTest.cs" />
+    <Compile Include="ProductRepositoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OOP.BL\OOP.BL.csproj">

@@ -41,34 +41,6 @@ namespace OOP.BL
         public decimal? CurrentPrice { get; set; }
 
         /// <summary>
-        /// Retrieves a single Product
-        /// </summary>
-        /// <param name="productId"></param>
-        /// <returns></returns>
-        public Product Retrieve(int productId)
-        {
-            return new Product();
-        }
-
-        /// <summary>
-        /// Retrieves a list of Products
-        /// </summary>
-        /// <returns></returns>
-        public List<Product> Retrieve()
-        {
-            return new List<Product>();
-        }
-
-        /// <summary>
-        /// Save a new Product to the DB
-        /// </summary>
-        /// <returns></returns>
-        public bool Save()
-        {
-            return true;
-        }
-
-        /// <summary>
         /// Validate the Product for valid values
         /// CurrentPrice cannot be null and Product Name should be present
         /// </summary>
