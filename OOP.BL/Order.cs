@@ -63,7 +63,7 @@ namespace OOP.BL
 
         public override string ToString()
         {
-            return OrderDate.Value.Date + " (" + OrderId + ") ";
+            return OrderDate.Value.Date + " (" + OrderId + ")";
         }
     }
 }
