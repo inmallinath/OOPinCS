@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OOP.BL
 {
-    public class Customer : EntityBase
+    public class Customer : EntityBase, ILoggable
     {
         /// <summary>
         /// Default Constructor

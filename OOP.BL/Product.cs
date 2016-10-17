@@ -7,7 +7,7 @@ using OOP.Common;
 
 namespace OOP.BL
 {
-    public class Product : EntityBase
+    public class Product : EntityBase, ILoggable
     {
         /// <summary>
         /// Default Constructor
