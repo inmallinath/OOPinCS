@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOP.Common;
 
 namespace OOP.BL
 {
@@ -36,7 +37,10 @@ namespace OOP.BL
 
         public string ProductName
         {
-            get { return _productName; }
+            get
+            {
+                return StringHandler.InsertSpaces(_productName);
+            }
             set { _productName = value; }
         }
 

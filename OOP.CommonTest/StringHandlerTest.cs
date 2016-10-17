@@ -14,10 +14,10 @@ namespace OOP.CommonTest
             var source = "ObjectOriented";
             var expected = "Object Oriented";
 
-            var handler = new StringHandler();
+            //var handler = new StringHandler();
 
             //Act
-            var actual = handler.InsertSpaces(source);
+            var actual = StringHandler.InsertSpaces(source);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -30,10 +30,10 @@ namespace OOP.CommonTest
             var source = "Object Oriented";
             var expected = "Object Oriented";
 
-            var handler = new StringHandler();
+            //var handler = new StringHandler();
 
             //Act
-            var actual = handler.InsertSpaces(source);
+            var actual = StringHandler.InsertSpaces(source);
 
             //Assert
             Assert.AreEqual(expected, actual);
