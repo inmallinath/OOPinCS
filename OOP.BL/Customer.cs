@@ -110,5 +110,12 @@ namespace OOP.BL
         {
             return FullName;
         }
+
+        public string Log()
+        {
+            var logString = this.CustomerId + ": " + this.FullName + " " + "Email: " + this.EmailAddress + 
+                               " " + "Status: " + this.EntityState.ToString();
+            return logString;
+        }
     }
 }
