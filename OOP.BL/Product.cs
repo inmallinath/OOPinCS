@@ -39,7 +39,7 @@ namespace OOP.BL
         {
             get
             {
-                return StringHandler.InsertSpaces(_productName);
+                return _productName.InsertSpaces();
             }
             set { _productName = value; }
         }
