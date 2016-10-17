@@ -30,7 +30,16 @@ namespace OOP.BL
         /// </summary>
         public int ProductId { get; private set; }
 
-        public string ProductName { get; set; }
+        //public string ProductName { get; set; }
+
+        private string _productName;
+
+        public string ProductName
+        {
+            get { return _productName; }
+            set { _productName = value; }
+        }
+
 
         public string ProductDescription { get; set; }
 
