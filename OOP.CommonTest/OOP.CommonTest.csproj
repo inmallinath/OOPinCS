@@ -45,15 +45,22 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
     <Compile Include="StringHandlerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LoggingServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OOP.BL\OOP.BL.csproj">
+      <Project>{1BE1A698-C73F-4BEA-858F-27D09F680AAC}</Project>
+      <Name>OOP.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OOP.Common\OOP.Common.csproj">
       <Project>{5d1b8e1b-1d17-4b27-a4b0-beb469aab2dd}</Project>
       <Name>OOP.Common</Name>
